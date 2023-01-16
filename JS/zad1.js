@@ -26,5 +26,17 @@ console.log(zmiana51);
 zmiana51.appendChild(zmiana5);
 //6
 const zmiana6 = document.querySelectorAll("section.side_column h1");
-console.log(zmiana6);
-const zmiana61 = ()
+console.log({zmiana6});
+zmiana6[1].remove();
+// 7
+const elementdiv = document.createElement("div");
+elementdiv.style.backgroundColor="pink";
+console.log({elementdiv});
+const szukiwaniefooter = document.querySelector("footer");
+console.log(szukiwaniefooter);
+szukiwaniefooter.appendChild(elementdiv);
+const elementp = document.createElement("p");
+elementp.innerHTML="&copy";
+console.log({elementp});
+const szukaniediv = document.querySelector("div");
+szukaniediv.appendChild(elementp);
