@@ -40,3 +40,11 @@ elementp.innerHTML="&copy";
 console.log({elementp});
 const szukaniediv = document.querySelector("div");
 szukaniediv.appendChild(elementp);
+// 8
+const p1 = document.createElement("p");
+const p2 = document.createElement("p");
+p1.innerHTML="<i>Pochylony tekst</i>";
+p2.innerText="<i>Pochylony tekst</i>";
+const szukanieheader = document.querySelector("header");
+szukanieheader.appendChild(p1);
+szukanieheader.appendChild(p2);

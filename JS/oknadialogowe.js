@@ -38,3 +38,4 @@ okno2.addEventListener('click', () => {
     oknoprompt()
 });
 
+
