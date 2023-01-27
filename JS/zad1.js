@@ -48,3 +48,10 @@ p2.innerText="<i>Pochylony tekst</i>";
 const szukanieheader = document.querySelector("header");
 szukanieheader.appendChild(p1);
 szukanieheader.appendChild(p2);
+// 9
+const section = document.createElement("section");
+section.style.border="2px dotted blue";
+section.style.margin="10 20 10 20";
+section.innerHTML="Zderzak";
+const szukaniebody = document.querySelector("body");
+szukaniebody.appendChild(section);
