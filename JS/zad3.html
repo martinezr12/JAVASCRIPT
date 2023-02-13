@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script></script>
+</head>
+<body>
+<div>
+    <textarea onfocus="this.style.backgroundColor='yellow'"></textarea>
+</div>
+<p>
+    <input type="text" onblur="this.value=this.value.toUpperCase()">
+</p>
+<p>
+    <select onchange="this.style.color=this.value">
+        <option>black</option>
+        <option>brown</option>
+        <option>blueviolet</option>
+        <option>burlywood</option>
+        <option>bisque</option>
+    </select>
+</p>
+<p onclick="this.style.fontSize='xx-large'" ondblclick="this.style.fontSize='medium'">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, voluptate.
+</p>
+<div>
+    <img src="jankos.png" oncontextmenu="alert(this.src)">
+</div>
+<div>
+    <input type="text" onkeyup="document.getElementById('pe').innerText=this.value">
+    <p id="pe"></p>
+</div>
+<h1 style="color: green" onmouseout="this.style.textShadow=''"
+    onmouseover="this.style.textShadow= '2px 2px 5px green'">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Maxime, nulla.</h1>
+</body>
+</html>
