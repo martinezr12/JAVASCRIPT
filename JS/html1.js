@@ -7,8 +7,8 @@ function zad1(){
     const zad11 = document.querySelector("h6");
     zad11.innerHTML="<i>Świetnie!</i>";
 }
+// zad 2
 const przycisk1 = document.querySelector("#butt2");
-// zad2
 przycisk1.addEventListener('click', () => {
     zad2();
 });
@@ -19,7 +19,7 @@ function zad2(){
 // zad3
 document.querySelector("#butt3").addEventListener("click", function () {
 
-    const containerForTagnameExample = document.getElementsByTagName("strong");
+    const containerForTagnameExample = document.querySelector("#przyklad3");
 
     const containerElements = containerForTagnameExample.querySelectorAll("*");
 
@@ -30,4 +30,24 @@ document.querySelector("#butt3").addEventListener("click", function () {
             el.style.border="10px dotted green";
         }
     }
+});
+// zad 4
+document.querySelector("#butt4").addEventListener("click", function () {
+
+    const zad4 = document.querySelector("#przyklad4");
+    alert(zad4.title);
+    console.log(zad4);
+});
+// zad 5
+document.querySelector("#butt5").addEventListener("click", function () {
+ const zad5 = document.querySelector("#przyklad5");
+ zad5.setAttribute("dir", "rtl");
+ console.log(zad5)
+});
+// zad6
+document.querySelector("#butt6").addEventListener("click", function () {
+    const zad6 = document.querySelector("#input1");
+    zad6.toggleAttribute("disabled", "")
+    const wcisnietyprzycisk = document.querySelector(zad6);
+    // if ()
 });
