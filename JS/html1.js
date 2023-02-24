@@ -47,7 +47,32 @@ document.querySelector("#butt5").addEventListener("click", function () {
 // zad6
 document.querySelector("#butt6").addEventListener("click", function () {
     const zad6 = document.querySelector("#input1");
-    zad6.toggleAttribute("disabled", "")
-    const wcisnietyprzycisk = document.querySelector(zad6);
-    // if ()
+    zad6.toggleAttribute("disabled");
+    const przycisk = document.querySelector("#butt6");
+    if (zad6.hasAttribute("disabled")) {
+        przycisk.innerHTML='edycja nie jest możliwa';
+    }
+    else {
+        przycisk.innerHTML='można edytować';
+    }
+});
+// zad7
+document.querySelector("#butt7").addEventListener("click", function () {
+const szukaniestyl = document.querySelector("#przyklad7");
+szukaniestyl.removeAttribute("style")
+    const szukaniehref = document.querySelector("#przyklad71");
+szukaniehref.removeAttribute("href")
+});
+// zad8
+document.querySelector("#butt8").addEventListener("click", function () {
+    const szukaniedata = document.querySelector("h3")
+    console.log(szukaniedata.dataset);
+    console.log(szukaniedata.attributes);
+    const szukaniediv = document.querySelector("#przyklad71")
+    for (const atrybuty of szukaniedata){
+        let para = document.createElement("p");
+        para.innerHTML = "Atrybuty: <b>" + atrybuty.nodeName
+        + "</b>ma wartość: </b>" + atrybuty.nodeValue + "</b>";
+        szukaniedata.appendChild(para);
+    }
 });
