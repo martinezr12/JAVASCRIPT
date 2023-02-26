@@ -60,19 +60,19 @@ document.querySelector("#butt6").addEventListener("click", function () {
 document.querySelector("#butt7").addEventListener("click", function () {
 const szukaniestyl = document.querySelector("#przyklad7");
 szukaniestyl.removeAttribute("style")
-    const szukaniehref = document.querySelector("#przyklad71");
+const szukaniehref = document.querySelector("#przyklad71");
 szukaniehref.removeAttribute("href")
 });
 // zad8
 document.querySelector("#butt8").addEventListener("click", function () {
-    const szukaniedata = document.querySelector("h3")
+    const szukaniedata = document.querySelector("#przyklad8")
     console.log(szukaniedata.dataset);
     console.log(szukaniedata.attributes);
-    const szukaniediv = document.querySelector("#przyklad71")
+    const szukaniediv = document.querySelector("#przyklad81")
     for (const atrybuty of szukaniedata){
         let para = document.createElement("p");
-        para.innerHTML = "Atrybuty: <b>" + atrybuty.nodeName
+        para.innerHTML = "atrybuty: <b>" + atrybuty.nodeName
         + "</b>ma wartość: </b>" + atrybuty.nodeValue + "</b>";
-        szukaniedata.appendChild(para);
+        szukaniediv.appendChild(para);
     }
 });
