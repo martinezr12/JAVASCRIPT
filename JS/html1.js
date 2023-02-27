@@ -69,10 +69,21 @@ document.querySelector("#butt8").addEventListener("click", function () {
     console.log(szukaniedata.dataset);
     console.log(szukaniedata.attributes);
     const szukaniediv = document.querySelector("#przyklad81")
-    for (const atrybuty of szukaniedata){
+    for (const atrybuty of szukaniedata.attributes){
         let para = document.createElement("p");
         para.innerHTML = "atrybuty: <b>" + atrybuty.nodeName
-        + "</b>ma wartość: </b>" + atrybuty.nodeValue + "</b>";
+        + "</b> ma wartość: </b>" + atrybuty.nodeValue + "</b>";
         szukaniediv.appendChild(para);
     }
+});
+// zad9
+document.querySelector("#butt9").addEventListener("click", function () {
+    let kolor = "#";
+    const mozliweLiczby = "0123456789abcdef";
+    for (let i = 0; i < 6; i++) {
+        kolor += mozliweLiczby[Math.floor(Math.random() * 16)];
+    }
+    console.log(kolor);
+    document.querySelector("#kolorowanka").style.backgroundColor = kolor;
+
 });
