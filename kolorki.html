@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/kolorki.js" defer></script>
+    <style>
+        td, body {
+            text-align: center;
+        }
+
+        table {
+            width: 80%;
+            height: 200px;
+            border-collapse: collapse;
+        }
+
+        #zmiana, #zmiana1, #zmiana2 {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+<h1 id="tekst">Zmień kolor tekstu</h1>
+<table>
+    <tr>
+        <td style="background-color: red;width:25%;" onmouseover="tekst.style.color='red'"
+            onmouseleave="tekst.style.color='black'">red
+        </td>
+        <td style="background-color: blue;width:25%;" onmouseover="tekst.style.color='blue'"
+            onmouseleave="tekst.style.color='black'">blue
+        </td>
+        <td style="background-color: bisque;width:25%;" onmouseover="tekst.style.color='bisque'"
+            onmouseleave="tekst.style.color='black'">bisque
+        </td>
+        <td style="background-color: springgreen;width:25%;" onmouseover="tekst.style.color='springgreen'"
+            onmouseleave="tekst.style.color='black'">springgreen
+        </td>
+    </tr>
+</table>
+<h1 id="numer">Numer telefonu: 51<span id="zmiana" style="text-shadow: 0px 0px 9px grey; color: transparent;">2</span>-
+    <span id="zmiana1" style="text-shadow: 0px 0px 9px grey;color: transparent;">156</span>-
+    <span id="zmiana2" style="text-shadow: 0px 0px 9px grey;color: transparent;">845</span>
+</h1>
+<label>
+    <input type="checkbox" id="pokazywanie"><span for="pokazywanie">Pokaż cały numer telefonu</span>
+</label>
+</body>
+</html>
