@@ -1,9 +1,29 @@
-const liczba1 = document.getElementById("liczba1");
-const liczba2 = document.getElementById("liczba2");
+const liczba = prompt("Podaj liczbę rzeczywistą");
+const szukanieklasy = document.getElementsByClassName("liczby");
+for (const num of szukanieklasy){
+    num.innerText = liczba
+}
 // abs
-const szukanieabs = document.getElementById("pokazywanieabs");
-const szukanieabs1 = document.getElementById("pokazywanieabs1");
-const abs = Math.abs(-6.5);
-const abs1 = Math.abs(4.3);
-szukanieabs.textContent=abs;
-szukanieabs1.textContent=abs1;
+const szukanieabs = document.getElementById("abswynik");
+szukanieabs.textContent = Math.abs(liczba)
+// ceil
+const szukanieceil = document.getElementById("ceilwynik");
+szukanieceil.textContent = Math.ceil(liczba)
+// floor
+const szukaniefloor = document.getElementById("floorwynik");
+szukaniefloor.textContent = Math.floor(liczba)
+// max
+const szukaniemax = document.getElementById("maxwynik");
+szukaniemax.textContent = Math.max(liczba)
+// min
+const szukaniemin = document.getElementById("minwynik");
+szukaniemin.textContent = Math.min(liczba)
+// pow
+const szukaniepow = document.getElementById("powwynik");
+szukaniepow.textContent = Math.pow(liczba,2)
+// round
+const szukanieround = document.getElementById("roundwynik");
+szukanieround.textContent = Math.round(liczba)
+// sqrt
+const szukaniesqrt = document.getElementById("sqrtwynik");
+szukaniesqrt.textContent = Math.sqrt(liczba)
