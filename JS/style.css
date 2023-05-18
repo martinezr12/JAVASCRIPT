@@ -1,0 +1,18 @@
+body{
+    background-color: lightpink;
+    text-align: center;
+    font-family: Cambria;
+}
+a{
+    text-decoration: none;
+}
+#logo{
+   width: 250px;
+}
+img{
+    width: 150px;
+    height: 150px;
+}
+#hit{
+    color: red;
+}
