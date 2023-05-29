@@ -13,14 +13,14 @@ document.querySelector("#submit").addEventListener("click", function () {
 
     while (w <= wiersz) {
         const tworzeniewierszy = document.createElement("tr")
-        w++;
         while (k <= kolumny) {
             const tworzeniekolumny = document.createElement("td")
-            tworzeniekolumny.innerHTML = ''+ k;
+            tworzeniekolumny.innerHTML =k+ '|'+w;
             k++;
             tworzeniewierszy.appendChild(tworzeniekolumny);
         }
         tabela.appendChild(tworzeniewierszy);
         k = 1;
+        w++;
     }
 });

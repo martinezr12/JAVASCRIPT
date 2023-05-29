@@ -1,0 +1,15 @@
+slice(start, end): Metoda slice() zwraca fragment łańcucha znaków pomiędzy podanymi indeksami start i end (nie włączając end). Jeśli nie podasz drugiego argumentu end, zostanie zwrócony fragment od start do końca łańcucha.
+
+substring(start, end): Metoda substring() również zwraca fragment łańcucha znaków pomiędzy podanymi indeksami start i end. Jednak w przeciwieństwie do slice(), metoda substring() automatycznie zamienia argumenty start i end, jeśli start jest większe niż end, aby utworzyć poprawny zakres.
+
+substr(start, length): Metoda substr() zwraca fragment łańcucha znaków, rozpoczynając od indeksu start i o długości length. Jeśli nie podasz drugiego argumentu length, zostanie zwrócony fragment od start do końca łańcucha.
+
+replace(searchValue, newValue): Metoda replace() zamienia wystąpienia searchValue w łańcuchu na newValue. Może przyjąć zarówno łańcuch znaków, jak i wyrażenie regularne jako argument searchValue.
+
+replaceAll(searchValue, newValue): Metoda replaceAll() działa podobnie do replace(), ale zamienia wszystkie wystąpienia searchValue w łańcuchu na newValue. Różnica polega na tym, że replaceAll() używa wyrażenia regularnego jako argumentu searchValue, a nie tylko pojedynczego łańcucha znaków.
+
+concat(str1, str2, ..., strN): Metoda concat() łączy dwa lub więcej łańcuchów znaków w jeden łańcuch. Przekazujesz go jako argumenty oddzielone przecinkami.
+
+trim(): Metoda trim() usuwa początkowe i końcowe białe znaki (np. spacje, tabulatory) z łańcucha. Zwraca nowy łańcuch bez tych białych znaków.
+
+split(separator): Metoda split() dzieli łańcuch na tablicę podziału według podanego separatora. Separator może być łańcuchem znaków lub wyrażeniem regularnym. Zwracana jest tablica zawierająca fragmenty łańcucha.
